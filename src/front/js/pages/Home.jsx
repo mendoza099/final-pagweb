@@ -6,6 +6,7 @@ import Carga from "../component/Carga.jsx";
 import Footer from "../component/Footer.jsx";
 import imagen1 from "/workspace/final-pagweb/src/front/img/annie-spratt-vGgn0xLdy8s-unsplash (1).jpg";
 import imagen2 from "/workspace/final-pagweb/src/front/img/ryoji-iwata-IBaVuZsJJTo-unsplash (2).jpg";
+import Division from "../component/Division.jsx";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -257,53 +258,7 @@ export const Home = () => {
         </svg>
         <div className="arrow-down"></div>
       </header>
-      <div className="about-us">
-        <div className="text" style={{ marginTop: "7%" }}>
-          <h2>Descubre</h2>
-          <h3 style={{ color: "#7B8FA1" }}>algo sobre nosotros </h3>
-          <div>
-            <i className="fas fa-asterisk"></i>
-          </div>
-          <p>
-            CryptoSasun Energía es una empresa altamente competente. Nuestro
-            enfoque innovador nos permite desarrollar soluciones vanguardistas
-            que transforman la industria. Lo que nos distingue es nuestro
-            espíritu cercano y trabajador. En CryptoSasun, valoramos y cuidamos
-            a cada miembro de nuestra comunidad, creando un ambiente de trabajo
-            colaborativo y altamente provechoso. Estamos comprometidos en
-            brindar servicios de calidad y generar un impacto positivo en la
-            vida de las personas y empresas.
-          </p>
-          <hr></hr>
-        </div>
-        <div className="image-container">
-          <div className="image image1">
-            <img
-              src={imagen2}
-              alt="Food Photo"
-              style={{ height: "643px", width: "422px" }}
-            />
-          </div>
-          <div className="image image2">
-            <img
-              src={imagen1}
-              alt="Food Photo"
-              style={{ height: "643px", width: "422px" }}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="recipes">
-        <div className="image"></div>
-        <div className="text">
-          <h2 style={{ marginLeft: "1.5cm", fontSize: "130%" }}>
-            ¿Necesitas ayuda?{" "}
-          </h2>
-          <h3 style={{ fontSize: "180%", marginLeft: "1cm" }}>
-            ¡Qué podemos hacer!
-          </h3>
-        </div>
-      </div>
+
       <div className="menu">
         <div className="box-model">
           <i className="fas fa-times fa-2x close"></i>
@@ -317,7 +272,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="menu-image-container">
+        <div className="menu-image-container" style={{ marginTop: "150px", marginLeft: "120px" }}>
           <div className="card" style={{ margin: "5px" }}>
             <img
               src="https://res.cloudinary.com/dwkb2dk5r/image/upload/v1687777747/DreamShaper_v5_A_closeup_of_a_complex_FPGA_chip_illuminated_by_0_1_dc6fej.jpg"
@@ -397,27 +352,89 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="text" style={{ marginTop: "5%" }}>
-          <h2>Investiga </h2>
-          <h3 style={{ color: "#7B8FA1" }}>Que te ofrecemos</h3>
+
+      </div>
+
+      <div className="menu">
+        <div className="box-model">
+          <i className="fas fa-times fa-2x "></i>
+          <div className="arrow">
+            <div className="arrow arrow-right"></div>
+            <div className="arrow arrow-left"></div>
+          </div>
+          <div className="box-image-container">
+            <div className="box-image">
+              <img src="" alt="Food Photo" />
+            </div>
+          </div>
+        </div>
+
+        <div className="text" style={{ marginRight: "2.5cm", marginBottom: "130px", marginTop: "40px" }}>
+          <h2 style={{ fontSize: "70px" }}>Descubre</h2>
+          <h3 style={{ color: "#7B8FA1", fontSize: "35px", marginTop: "30px" }}>
+            Que te ofrecemos
+          </h3>
           <div>
             <i className="fas fa-asterisk"></i>
           </div>
           <p>
-            En CriptoSasun, ofrecemos una amplia gama de servicios diseñados
-            para satisfacer las necesidades de nuestros clientes. Desde
-            soluciones tecnológicas innovadoras hasta atención personalizada,
-            nos esforzamos por brindar la mejor experiencia posible. Uno de
-            nuestros objetivos principales es ayudar a nuestros clientes a
-            alcanzar sus metas, superar sus expectativas y ahorrar. Para obtener
-            más información sobre lo que ofrecemos y cómo podemos ayudarle, lo
-            invitamos a explorar nuestro sitio web y las imágenes que tiene a su
-            izquierda, donde encontrará detalles sobre nuestros productos y
-            recursos informativos. No pierda la oportunidad de descubrir cómo
-            podemos mejorar su vida o negocio. ¡Infórmese ahora y déjenos ser su
-            socio de confianza en el camino hacia el éxito!
+            En CriptoSasun, ofrecemos una amplia gama de servicios diseñados para satisfacer las necesidades de nuestros clientes. Desde soluciones tecnológicas innovadoras hasta atención personalizada. nos esforzamos por brindar la
+            mejor experiencia posible. Uno de nuestros objetivos principales es ayudar a nuestros clientes a alcanzar sus metas,
+            superar sus expectativas, poder ahorrar... Para obtener más información sobre lo que ofrecemos y cómo podemos ayudarle, lo invitamos a explorar nuestro sitio web, donde encontrará
+            detalles sobre nuestros procuctos y recursos informativos. No pierda la oportunidad de descubrir como podemos ayudarle a mejorar su vida o negocio.
+            ¡Déjenos ser su socio de
+
+            confianza en el camino hacia el éxito!
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div className="recipes">
+        <div className="image"></div>
+        <div className="text">
+          <h2 style={{ marginLeft: "1.5cm", fontSize: "130%" }}>
+            ¿Necesitas ayuda?{" "}
+          </h2>
+          <h3 style={{ fontSize: "180%", marginLeft: "1cm" }}>
+            ¡Qué podemos hacer!
+          </h3>
+        </div>
+      </div>
+
+
+      <div className="about-us">
+        <div className="text" style={{ marginTop: "7%" }}>
+          <h2>Aprende</h2>
+          <h3 style={{ color: "#7B8FA1" }}>algo sobre nosotros </h3>
+          <div>
+            <i className="fas fa-asterisk"></i>
+          </div>
+          <p>
+            En CryptoSasun Energía, nos enorgullecemos de ser reconocidos como una entidad altamente competente y dinámica en el paisaje energético actual. Nos dedicamos incansablemente a innovar y a redefinir los estándares de excelencia en nuestro campo, posicionándonos como líderes revolucionarios en la industria. Nuestro enfoque fresco e innovador no solo nos capacita para desarrollar soluciones vanguardistas, sino que también nos permite transformar radicalmente la industria, redefiniendo lo que es posible. Nos esforzamos por mantenernos un paso adelante, anticipándonos a las tendencias emergentes y adaptándonos proactivamente a las demandas cambiantes del mercado. Esta perspectiva progresiva es lo que cataliza nuestro continuo éxito y crecimiento.
           </p>
           <hr></hr>
+        </div>
+        <div className="image-container">
+          <div className="image image1">
+            <img
+              src={imagen2}
+              alt="Food Photo"
+              style={{ height: "643px", width: "422px" }}
+            />
+          </div>
+          <div className="image image2">
+            <img
+              src={imagen1}
+              alt="Food Photo"
+              style={{ height: "643px", width: "422px" }}
+            />
+          </div>
         </div>
       </div>
       <div className="fixed-image">
@@ -474,6 +491,7 @@ export const Home = () => {
         </div>
       </div>
 
+      <Division />
       <Footer />
       <div className="copyright">
         <svg

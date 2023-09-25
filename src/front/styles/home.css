@@ -435,9 +435,7 @@ footer .newsletter i,
 /*End Recipes*/
 
 /*Start Menu*/
-.menu {
-  padding: 60px;
-}
+
 .menu .box-model {
   display: none;
   position: fixed;
@@ -811,7 +809,7 @@ footer .newsletter i,
     padding: 60px 20px;
   }
   .menu {
-    padding: 60px 0 60px 20px;
+    padding: 30px 0 30px 20px;
   }
 }
 /*End Home Page Responsive*/
